@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.env
+work/
+*.tmp
+synthetic-query-generation.json
+synthetic-query-vectors.json.gz
+synthetic-query-results.json
+independent-vectors.json.gz
+independent-vector-results.json
+reranker-progress.json
+reranker-results.json
