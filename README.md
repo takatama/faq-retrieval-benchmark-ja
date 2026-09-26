@@ -1,0 +1,38 @@
+# 日本語FAQ検索の比較実験
+
+社内FAQが将来約1,500件に増えたとき、質問文のベクトル検索だけで候補を探せるかを考えるため、独立した問い合わせがある[LocalgovFAQ研究](https://github.com/ku-nlp/bert-based-faqir)由来の公開データで比較しました。社内FAQがすでに1,500件ある、または実際の社内問い合わせで精度を測った、という意味ではありません。
+
+FAQ 1,786件、問い合わせ749問のうち、公開ラベルに「回答を含むFAQ」がある587問を対象とします。上位にラベル付きFAQが入る数は次のとおりです。
+
+| 方法 | Hit@1 | Hit@3 | Hit@10 |
+|---|---:|---:|---:|
+| 質問文のGeminiベクトル検索（768次元） | **394** | **496** | 553 |
+| 回答文の文字BM25 | 119 | 188 | 269 |
+| 質問ベクトル＋回答BM25の固定RRF | 249 | 358 | 482 |
+| FAQごとに生成した5件の言い換えを個別に索引化 | 379 | 506 | 558 |
+| ベクトル上位10件をリランカーで並べ直す | 353 | 474 | 553 |
+
+分母は各列とも587です。この条件では、質問文を1件1本だけベクトル化して上位3件を見せる方法を初期構成に選びます。合成クエリの個別索引はHit@3で10問増えますが、Hit@1は15問減り、ベクトル数は6倍です。固定RRFとこのリランカーはHit@3を下げました。別の重み、モデル、候補の作り方を一般に否定する結果ではありません。
+
+これは**元研究の正解ラベルを含む割合**であり、利用者が回答を読んで解決する割合ではありません。未判定の有用なFAQが検索結果に混じる可能性があります。特定の自治体のデータを社内FAQ全般へ直接一般化もしません。
+
+## 再現
+
+[ローカル実行手順](docs/localgovfaq-local-reproduction.md)に従って元データを手元に取得し、Git blob SHAを照合します。データ本文や合成質問文の一括ファイルはこのリポジトリーに含めません。実験用のGitHub Actionsは使用しません。
+
+Python 3.12以降でデータを取得した後、**API呼び出しなし**で保存済みID順位を公開qrelsと照合できます。
+
+```bash
+python scripts/prepare_localgovfaq.py
+python scripts/verify_saved_results.py
+```
+
+質問文ベクトル、回答BM25、合成クエリ、リランカーの設定と結果は [`results/`](results/) にあります。保存済みベクトルで基準検索をやり直す場合もAPIキーは不要です。合成クエリを当時と同じ入力で再計算する場合は、旧実験で生成した文をローカルだけに復元します。再生成した文は同じ実験とはなりません。
+
+合成クエリの数値ベクトルのgzipファイルはGitHubのブラウザアップロード上限に合わせて4分割しています。追試時は[手順書](docs/localgovfaq-local-reproduction.md)に従って結合し、SHA-256を照合してください。
+
+## データの出典とライセンス
+
+元データは Sakata らの *FAQ Retrieval using Query-Question Similarity and BERT-Based Query-Answer Relevance*（SIGIR 2019）に由来します。入力には[変換版の固定コミット](https://github.com/mahiya/japanese-text-embedding-benchmark/tree/c09fbe4ace0390b71d3d8a074ee1b807765d26f1/dataset)を使い、ダウンロードした3ファイルのハッシュを検証します。LocalgovFAQの明示的な再配布ライセンスは確認できませんでした。記事や再利用時には[元の配布元](https://github.com/ku-nlp/bert-based-faqir)と論文を参照してください。
+
+ルートの[MIT License](LICENSE)は、このリポジトリーで作成した**プログラムコード**に適用します。第三者のFAQ・問い合わせ本文、その利用条件、モデルや保存済み数値結果に一括でMITを付与するものではありません。旧[faq-search-experiment](https://github.com/takatama/faq-search-experiment)の子育てFAQデータとそのGit履歴は、この新しいリポジトリーには持ち込みません。
