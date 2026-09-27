@@ -20,11 +20,12 @@ source .venv/bin/activate
 python -m pip install numpy pydantic
 python scripts/prepare_localgovfaq.py
 python scripts/independent_eval.py --dataset-dir work/localgovfaq/dataset --output work/localgovfaq/lexical.json
-cp results/independent-gemini-vectors.json.gz work/localgovfaq/independent-vectors.json.gz
+git clone --filter=blob:none --no-checkout https://github.com/takatama/faq-search-experiment.git work/legacy
+python -c "import hashlib,pathlib,subprocess; b=subprocess.check_output(['git','-C','work/legacy','show','b41f159c6341c7259c8eecf1fd69efabbe3444de:results/independent-gemini-vectors.json.gz']); assert hashlib.sha256(b).hexdigest()=='6dae596312f9cefc030ed8cf3382f008320a359b5243fb0727bd59029ca404ba'; pathlib.Path('work/localgovfaq/independent-vectors.json.gz').write_bytes(b)"
 python scripts/independent_vector.py --dataset-dir work/localgovfaq/dataset
 python scripts/answer_bm25_experiment.py \
   --dataset-dir work/localgovfaq/dataset \
-  --vector-cache results/independent-gemini-vectors.json.gz \
+  --vector-cache work/localgovfaq/independent-vectors.json.gz \
   --vector-result results/independent-gemini-results.json.gz \
   --output work/localgovfaq/answer-bm25-results.json
 ```
@@ -36,12 +37,13 @@ python scripts/answer_bm25_experiment.py \
 生成した8,930件の質問文は、ライセンスの不明なFAQ本文に基づくため、mainには含めていません。過去のコミットに保存した**当時の生成文**を自分の作業フォルダーだけへ復元すると、現在保存されている数値ベクトルの入力ハッシュと一致し、生成・埋め込みの再計算なしで順位を検査できます。以下の旧コミットが取得できる場合の手順です。
 
 ```bash
-git clone --filter=blob:none https://github.com/takatama/faq-search-experiment.git work/legacy
 git -C work/legacy fetch origin audit/independent-qrels
 git -C work/legacy show 9a5d44c4b683875d2a2055c2128fef775d4eec03:results/independent-synthetic-generation.json.gz > work/localgovfaq/synthetic-query-generation.json.gz
 python -c "import gzip,pathlib; p=pathlib.Path('work/localgovfaq'); (p/'synthetic-query-generation.json').write_bytes(gzip.decompress((p/'synthetic-query-generation.json.gz').read_bytes()))"
-python -c "import hashlib,pathlib; p=pathlib.Path('results'); b=b''.join(x.read_bytes() for x in sorted(p.glob('independent-synthetic-vectors.json.gz.part-*'))); assert hashlib.sha256(b).hexdigest()=='4252b04320d4eb76a9b30d6dfa0aa01d858200811d638e38e8dd30635db2908f'; pathlib.Path('work/localgovfaq/synthetic-query-vectors.json.gz').write_bytes(b)"
-python scripts/synthetic_query_experiment.py --dataset-dir work/localgovfaq/dataset
+python -c "import hashlib,pathlib,subprocess; b=subprocess.check_output(['git','-C','work/legacy','show','b41f159c6341c7259c8eecf1fd69efabbe3444de:results/independent-synthetic-vectors.json.gz']); assert hashlib.sha256(b).hexdigest()=='4252b04320d4eb76a9b30d6dfa0aa01d858200811d638e38e8dd30635db2908f'; pathlib.Path('work/localgovfaq/synthetic-query-vectors.json.gz').write_bytes(b)"
+python scripts/synthetic_query_experiment.py \
+  --dataset-dir work/localgovfaq/dataset \
+  --baseline-vectors work/localgovfaq/independent-vectors.json.gz
 ```
 
 PowerShellでは上の `git show ... > ...` 行を次に置き換えます（事前に上記の `git clone` と `git fetch`、`work/localgovfaq` の作成が必要です）。
@@ -65,4 +67,4 @@ python scripts/reranker_experiment.py --dataset-dir work/localgovfaq/dataset
 
 ## 公開物の範囲
 
-このリポジトリーで配布するLocalgovFAQ関連の結果は、集計、ID順位、数値ベクトル、再現用コードです。`python scripts/verify_saved_results.py` で元データのqrelsに対し保存順位を再採点できます。FAQや問い合わせの全文、合成質問文の一括ファイルは現在のmainに含めません。MITを元データに適用したという意味ではありません。以前の公開コミットやActionsの成果物には過去のファイルが残る可能性があります。
+このリポジトリーで配布するLocalgovFAQ関連の結果は、集計、ID順位、再現用コードです。数値ベクトルの大きなキャッシュは上記の固定コミットから取得します。`python scripts/verify_saved_results.py` で元データのqrelsに対し保存順位を再採点できます。FAQや問い合わせの全文、合成質問文の一括ファイルは現在のmainに含めません。MITを元データに適用したという意味ではありません。以前の公開コミットやActionsの成果物には過去のファイルが残る可能性があります。
