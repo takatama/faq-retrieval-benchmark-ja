@@ -95,3 +95,13 @@ python scripts/full_context_50.py --jpy-per-usd 165
 ```
 
 結果は `results/full-context-50-report.md`。50問すべて完了し、キャッシュ使用も確認できた。請求書の取得はできないため、円額は公開単価と報告トークン数を使った計算値である。
+
+## 同じ50問のTop 10並べ直し
+
+質問文ベクトル検索が出したTop 10の質問と回答だけをGemini 3.8 Flashに渡し、候補10件を並べ直した。全件投入と同じ質問IDを使用する。
+
+```bash
+python scripts/top10_gemini_rerank.py --jpy-per-usd 165
+```
+
+実行前に50問分の入力トークンを数え、全問が出力上限まで使った場合の費用が500円以下であることを確認する。結果は `results/top10-gemini-rerank-50-report.md`。
