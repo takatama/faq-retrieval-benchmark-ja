@@ -27,7 +27,7 @@ python scripts/prepare_localgovfaq.py
 python scripts/verify_saved_results.py
 ```
 
-質問文ベクトル、回答BM25、合成クエリ、リランカーの設定と順位データは [`results/`](results/) にあります。大きな保存済みベクトルは[旧実験リポジトリー](https://github.com/takatama/faq-search-experiment)の固定コミットからローカルに取得し、SHA-256を検証します。ベクトルの再計算にAPIキーは不要です。合成クエリを当時と同じ入力で再計算する場合は、旧実験で生成した文もローカルだけに復元します。再生成した文は同じ実験とはなりません。
+質問文ベクトル、回答BM25、合成クエリ、リランカーの設定と結果は [`results/`](results/) にあります。保存済みベクトルで基準検索をやり直す場合もAPIキーは不要です。合成クエリを当時と同じ入力で再計算する場合は、[旧実験リポジトリー](https://github.com/takatama/faq-search-experiment)の固定コミットから生成文をローカルだけに復元します。再生成した文は同じ実験とはなりません。
 
 ## データの出典とライセンス
 
