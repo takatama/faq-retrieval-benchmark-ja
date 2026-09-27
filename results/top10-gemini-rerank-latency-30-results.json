@@ -490,7 +490,8 @@
     "gemini_api_median_seconds": 1.285354699997697,
     "gemini_api_p90_seconds": 1.451662400038913,
     "gemini_api_min_seconds": 1.0371942999772727,
-    "gemini_api_max_seconds": 1.5579787000315264
+    "gemini_api_max_seconds": 1.5579787000315264,
+    "gemini_api_p95_seconds": 1.4984893149958225
   },
   "usage_tokens": {
     "prompt_token_count": 93662,

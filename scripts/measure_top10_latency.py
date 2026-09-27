@@ -95,6 +95,7 @@ def main():
     result["summary"] = {"vector_local_median_seconds": statistics.median(local),
                          "gemini_api_median_seconds": statistics.median(api),
                          "gemini_api_p90_seconds": percentile(api, .9),
+                         "gemini_api_p95_seconds": statistics.quantiles(api, n=20, method="inclusive")[18],
                          "gemini_api_min_seconds": min(api),
                          "gemini_api_max_seconds": max(api)}
     usage = {key: sum(int(row["usage"].get(key) or 0) for row in result["rows"])
