@@ -1,0 +1,3647 @@
+{
+  "completed": 50,
+  "target": 50,
+  "hits": {
+    "hit1": {
+      "gemini": 47,
+      "vector": 38,
+      "bm25": 13,
+      "rescued_vs_vector": 10,
+      "worsened_vs_vector": 1,
+      "rescued_vs_bm25": 34,
+      "worsened_vs_bm25": 0
+    },
+    "hit3": {
+      "gemini": 48,
+      "vector": 40,
+      "bm25": 19,
+      "rescued_vs_vector": 9,
+      "worsened_vs_vector": 1,
+      "rescued_vs_bm25": 29,
+      "worsened_vs_bm25": 0
+    },
+    "hit10": {
+      "gemini": 49,
+      "vector": 49,
+      "bm25": 24,
+      "rescued_vs_vector": 1,
+      "worsened_vs_vector": 1,
+      "rescued_vs_bm25": 25,
+      "worsened_vs_bm25": 0
+    }
+  },
+  "usage_tokens": {
+    "prompt_token_count": 24872575,
+    "cached_content_token_count": 24871800,
+    "candidates_token_count": 3827,
+    "thoughts_token_count": 0
+  },
+  "request_cost_usd": 1.8803174999999999,
+  "reserved_storage_usd": 0.497436,
+  "calculated_total_usd": 2.3777535,
+  "calculated_total_jpy": 392.3293275,
+  "jpy_per_usd": 165.0,
+  "note": "Published rates and reported tokens; actual invoice and exchange fees may differ.",
+  "rows": [
+    {
+      "query_id": "8",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "298",
+        "243",
+        "951",
+        "536",
+        "389",
+        "195",
+        "715",
+        "411",
+        "296",
+        "755"
+      ],
+      "vector_top10": [
+        "298",
+        "296",
+        "1282",
+        "1150",
+        "243",
+        "1457",
+        "1023",
+        "1342",
+        "1422",
+        "438"
+      ],
+      "bm25_top10": [
+        "298",
+        "1039",
+        "110",
+        "755",
+        "6",
+        "79",
+        "878",
+        "380",
+        "531",
+        "81"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 84,
+        "prompt_token_count": 497474,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497474
+          }
+        ],
+        "total_token_count": 497558
+      }
+    },
+    {
+      "query_id": "17",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "204",
+        "121",
+        "8",
+        "184",
+        "2",
+        "42",
+        "89",
+        "403",
+        "150",
+        "213"
+      ],
+      "vector_top10": [
+        "204",
+        "121",
+        "447",
+        "1056",
+        "656",
+        "756",
+        "62",
+        "1102",
+        "396",
+        "386"
+      ],
+      "bm25_top10": [
+        "121",
+        "8",
+        "204",
+        "2",
+        "64",
+        "413",
+        "386",
+        "89",
+        "99",
+        "124"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 78,
+        "prompt_token_count": 497456,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497456
+          }
+        ],
+        "total_token_count": 497534
+      }
+    },
+    {
+      "query_id": "45",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "557",
+        "245",
+        "463",
+        "351",
+        "643",
+        "882",
+        "417",
+        "80",
+        "55",
+        "477"
+      ],
+      "vector_top10": [
+        "285",
+        "668",
+        "1704",
+        "1224",
+        "557",
+        "524",
+        "1207",
+        "395",
+        "1783",
+        "308"
+      ],
+      "bm25_top10": [
+        "368",
+        "288",
+        "681",
+        "591",
+        "1163",
+        "1121",
+        "919",
+        "816",
+        "524",
+        "472"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 82,
+        "prompt_token_count": 497451,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497451
+          }
+        ],
+        "total_token_count": 497533
+      }
+    },
+    {
+      "query_id": "56",
+      "gemini": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "236",
+        "631",
+        "916",
+        "162",
+        "340",
+        "1294",
+        "311",
+        "602",
+        "30",
+        "407"
+      ],
+      "vector_top10": [
+        "916",
+        "236",
+        "1294",
+        "1736",
+        "720",
+        "1219",
+        "983",
+        "407",
+        "1014",
+        "285"
+      ],
+      "bm25_top10": [
+        "1251",
+        "236",
+        "1037",
+        "536",
+        "358",
+        "172",
+        "1057",
+        "412",
+        "98",
+        "699"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 84,
+        "prompt_token_count": 497447,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497447
+          }
+        ],
+        "total_token_count": 497531
+      }
+    },
+    {
+      "query_id": "60",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1723",
+        "1420",
+        "1586",
+        "915",
+        "1620",
+        "1685",
+        "1366",
+        "1504",
+        "1563",
+        "466"
+      ],
+      "vector_top10": [
+        "1723",
+        "1586",
+        "1420",
+        "1685",
+        "1563",
+        "1620",
+        "1366",
+        "1164",
+        "1504",
+        "123"
+      ],
+      "bm25_top10": [
+        "1089",
+        "915",
+        "1420",
+        "449",
+        "921",
+        "402",
+        "1504",
+        "1550",
+        "803",
+        "174"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 92,
+        "prompt_token_count": 497458,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497458
+          }
+        ],
+        "total_token_count": 497550
+      }
+    },
+    {
+      "query_id": "62",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "119",
+        "386",
+        "19",
+        "558",
+        "1131",
+        "89",
+        "635",
+        "42",
+        "153",
+        "70"
+      ],
+      "vector_top10": [
+        "19",
+        "1131",
+        "386",
+        "119",
+        "656",
+        "1041",
+        "1270",
+        "62",
+        "883",
+        "396"
+      ],
+      "bm25_top10": [
+        "386",
+        "32",
+        "73",
+        "756",
+        "2",
+        "883",
+        "8",
+        "1131",
+        "19",
+        "402"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 42,
+        "prompt_token_count": 497454,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497454
+          }
+        ],
+        "total_token_count": 497496
+      }
+    },
+    {
+      "query_id": "77",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "50",
+        "172",
+        "337",
+        "708",
+        "943",
+        "151",
+        "797",
+        "376",
+        "569",
+        "1747"
+      ],
+      "vector_top10": [
+        "50",
+        "172",
+        "337",
+        "376",
+        "113",
+        "296",
+        "569",
+        "797",
+        "214",
+        "879"
+      ],
+      "bm25_top10": [
+        "50",
+        "376",
+        "464",
+        "172",
+        "708",
+        "841",
+        "569",
+        "337",
+        "797",
+        "266"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 84,
+        "prompt_token_count": 497454,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497454
+          }
+        ],
+        "total_token_count": 497538
+      }
+    },
+    {
+      "query_id": "92",
+      "gemini": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "253",
+        "1784",
+        "1691",
+        "1718",
+        "1104",
+        "1391",
+        "3",
+        "978",
+        "1332",
+        "210"
+      ],
+      "vector_top10": [
+        "1391",
+        "1691",
+        "1784",
+        "978",
+        "1776",
+        "108",
+        "1548",
+        "469",
+        "1332",
+        "253"
+      ],
+      "bm25_top10": [
+        "633",
+        "996",
+        "97",
+        "1041",
+        "684",
+        "196",
+        "210",
+        "1287",
+        "591",
+        "1391"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 88,
+        "prompt_token_count": 497452,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497452
+          }
+        ],
+        "total_token_count": 497540
+      }
+    },
+    {
+      "query_id": "109",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "65",
+        "189",
+        "1366",
+        "1504",
+        "1674",
+        "1636",
+        "88",
+        "563",
+        "285",
+        "141"
+      ],
+      "vector_top10": [
+        "189",
+        "65",
+        "563",
+        "126",
+        "120",
+        "402",
+        "298",
+        "35",
+        "316",
+        "206"
+      ],
+      "bm25_top10": [
+        "65",
+        "189",
+        "1646",
+        "1402",
+        "625",
+        "1569",
+        "979",
+        "1629",
+        "458",
+        "948"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 47,
+        "prompt_token_count": 497446,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497446
+          }
+        ],
+        "total_token_count": 497493
+      }
+    },
+    {
+      "query_id": "110",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "593",
+        "565",
+        "375",
+        "310",
+        "23",
+        "61",
+        "80",
+        "477",
+        "226",
+        "25"
+      ],
+      "vector_top10": [
+        "593",
+        "1163",
+        "565",
+        "472",
+        "23",
+        "375",
+        "80",
+        "502",
+        "11",
+        "426"
+      ],
+      "bm25_top10": [
+        "1163",
+        "524",
+        "919",
+        "816",
+        "1175",
+        "472",
+        "565",
+        "1475",
+        "477",
+        "310"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 51,
+        "prompt_token_count": 497452,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497452
+          }
+        ],
+        "total_token_count": 497503
+      }
+    },
+    {
+      "query_id": "111",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "838",
+        "1734",
+        "185",
+        "268",
+        "511",
+        "177",
+        "1110",
+        "1670",
+        "727",
+        "1293"
+      ],
+      "vector_top10": [
+        "1734",
+        "838",
+        "511",
+        "944",
+        "1296",
+        "434",
+        "1594",
+        "1585",
+        "1071",
+        "1776"
+      ],
+      "bm25_top10": [
+        "196",
+        "1331",
+        "52",
+        "121",
+        "1041",
+        "503",
+        "204",
+        "199",
+        "33",
+        "24"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 88,
+        "prompt_token_count": 497454,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497454
+          }
+        ],
+        "total_token_count": 497542
+      }
+    },
+    {
+      "query_id": "118",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "210",
+        "3",
+        "1391",
+        "978",
+        "253",
+        "63",
+        "1691",
+        "1718",
+        "1104"
+      ],
+      "vector_top10": [
+        "1784",
+        "978",
+        "63",
+        "390",
+        "1718",
+        "1391",
+        "92",
+        "253",
+        "1691",
+        "1785"
+      ],
+      "bm25_top10": [
+        "94",
+        "74",
+        "650",
+        "258",
+        "567",
+        "54",
+        "53",
+        "591",
+        "1015",
+        "52"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 86,
+        "prompt_token_count": 497454,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497454
+          }
+        ],
+        "total_token_count": 497540
+      }
+    },
+    {
+      "query_id": "153",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "855",
+        "371",
+        "1391",
+        "3",
+        "1691",
+        "1718",
+        "210",
+        "63",
+        "2"
+      ],
+      "vector_top10": [
+        "1784",
+        "978",
+        "63",
+        "1718",
+        "651",
+        "1234",
+        "390",
+        "253",
+        "1785",
+        "511"
+      ],
+      "bm25_top10": [
+        "2",
+        "1001",
+        "1035",
+        "578",
+        "138",
+        "1255",
+        "8",
+        "651",
+        "804",
+        "196"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 83,
+        "prompt_token_count": 497458,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497458
+          }
+        ],
+        "total_token_count": 497541
+      }
+    },
+    {
+      "query_id": "154",
+      "gemini": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "965",
+        "1569",
+        "318",
+        "590",
+        "1039",
+        "300",
+        "1262",
+        "806",
+        "139",
+        "1295"
+      ],
+      "vector_top10": [
+        "648",
+        "154",
+        "470",
+        "1569",
+        "1262",
+        "1776",
+        "318",
+        "965",
+        "868",
+        "111"
+      ],
+      "bm25_top10": [
+        "1030",
+        "861",
+        "300",
+        "971",
+        "1141",
+        "590",
+        "1646",
+        "625",
+        "1402",
+        "836"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 88,
+        "prompt_token_count": 497448,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497448
+          }
+        ],
+        "total_token_count": 497536
+      }
+    },
+    {
+      "query_id": "163",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "1391",
+        "253",
+        "3",
+        "978",
+        "210",
+        "63",
+        "1785",
+        "1691",
+        "1718"
+      ],
+      "vector_top10": [
+        "1784",
+        "1391",
+        "978",
+        "1691",
+        "63",
+        "1718",
+        "253",
+        "1785",
+        "383",
+        "390"
+      ],
+      "bm25_top10": [
+        "1287",
+        "1687",
+        "633",
+        "1549",
+        "1465",
+        "996",
+        "676",
+        "1275",
+        "378",
+        "865"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 47,
+        "prompt_token_count": 497449,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497449
+          }
+        ],
+        "total_token_count": 497496
+      }
+    },
+    {
+      "query_id": "169",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "177",
+        "838",
+        "1117",
+        "727",
+        "420",
+        "1185",
+        "268",
+        "185",
+        "511",
+        "1210"
+      ],
+      "vector_top10": [
+        "177",
+        "1117",
+        "268",
+        "838",
+        "727",
+        "1594",
+        "420",
+        "1296",
+        "1185",
+        "511"
+      ],
+      "bm25_top10": [
+        "177",
+        "1273",
+        "1210",
+        "511",
+        "1730",
+        "225",
+        "432",
+        "268",
+        "254",
+        "396"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 48,
+        "prompt_token_count": 497448,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497448
+          }
+        ],
+        "total_token_count": 497496
+      }
+    },
+    {
+      "query_id": "172",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "268",
+        "838",
+        "94",
+        "1734",
+        "185",
+        "511",
+        "177",
+        "727",
+        "1117",
+        "1293"
+      ],
+      "vector_top10": [
+        "268",
+        "511",
+        "1117",
+        "1293",
+        "727",
+        "177",
+        "838",
+        "1734",
+        "185",
+        "1326"
+      ],
+      "bm25_top10": [
+        "993",
+        "858",
+        "727",
+        "7",
+        "827",
+        "32",
+        "1172",
+        "514",
+        "957",
+        "1279"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 47,
+        "prompt_token_count": 497446,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497446
+          }
+        ],
+        "total_token_count": 497493
+      }
+    },
+    {
+      "query_id": "186",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1587",
+        "1045",
+        "1108",
+        "1630",
+        "1474",
+        "996",
+        "1748",
+        "148",
+        "74",
+        "1355"
+      ],
+      "vector_top10": [
+        "1587",
+        "1045",
+        "1630",
+        "1108",
+        "1237",
+        "996",
+        "419",
+        "1212",
+        "1057",
+        "159"
+      ],
+      "bm25_top10": [
+        "1325",
+        "898",
+        "641",
+        "709",
+        "1247",
+        "231",
+        "1045",
+        "1115",
+        "165",
+        "783"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 51,
+        "prompt_token_count": 497448,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497448
+          }
+        ],
+        "total_token_count": 497499
+      }
+    },
+    {
+      "query_id": "191",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "251",
+        "508",
+        "429",
+        "267",
+        "1610",
+        "953",
+        "1038",
+        "171",
+        "1219",
+        "649"
+      ],
+      "vector_top10": [
+        "251",
+        "508",
+        "1610",
+        "11",
+        "824",
+        "649",
+        "429",
+        "933",
+        "1357",
+        "1427"
+      ],
+      "bm25_top10": [
+        "251",
+        "673",
+        "726",
+        "95",
+        "1130",
+        "1094",
+        "1103",
+        "1139",
+        "1075",
+        "988"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 87,
+        "prompt_token_count": 497447,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497447
+          }
+        ],
+        "total_token_count": 497534
+      }
+    },
+    {
+      "query_id": "195",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "210",
+        "63",
+        "3",
+        "1391",
+        "978",
+        "253",
+        "1785",
+        "1540",
+        "136"
+      ],
+      "vector_top10": [
+        "1784",
+        "978",
+        "63",
+        "390",
+        "253",
+        "1540",
+        "1391",
+        "1718",
+        "1785",
+        "1332"
+      ],
+      "bm25_top10": [
+        "950",
+        "538",
+        "1540",
+        "161",
+        "136",
+        "1369",
+        "1490",
+        "92",
+        "242",
+        "570"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 85,
+        "prompt_token_count": 497451,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497451
+          }
+        ],
+        "total_token_count": 497536
+      }
+    },
+    {
+      "query_id": "198",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "934",
+        "1487",
+        "1231",
+        "1585",
+        "1278",
+        "1242",
+        "285",
+        "1613",
+        "1071",
+        "1503"
+      ],
+      "vector_top10": [
+        "934",
+        "1503",
+        "1071",
+        "1487",
+        "1585",
+        "944",
+        "1312",
+        "1120",
+        "1432",
+        "491"
+      ],
+      "bm25_top10": [
+        "996",
+        "79",
+        "110",
+        "1287",
+        "92",
+        "633",
+        "402",
+        "1118",
+        "1015",
+        "923"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 92,
+        "prompt_token_count": 497463,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497463
+          }
+        ],
+        "total_token_count": 497555
+      }
+    },
+    {
+      "query_id": "204",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "747",
+        "1582",
+        "1014",
+        "408",
+        "227",
+        "1408",
+        "1062",
+        "1170",
+        "272",
+        "779"
+      ],
+      "vector_top10": [
+        "1582",
+        "747",
+        "1014",
+        "227",
+        "1599",
+        "1325",
+        "1408",
+        "779",
+        "337",
+        "93"
+      ],
+      "bm25_top10": [
+        "546",
+        "772",
+        "1764",
+        "449",
+        "456",
+        "1673",
+        "367",
+        "1327",
+        "1301",
+        "538"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 89,
+        "prompt_token_count": 497446,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497446
+          }
+        ],
+        "total_token_count": 497535
+      }
+    },
+    {
+      "query_id": "208",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "213",
+        "150",
+        "42",
+        "89",
+        "517",
+        "1634",
+        "396",
+        "62",
+        "447",
+        "153"
+      ],
+      "vector_top10": [
+        "213",
+        "150",
+        "517",
+        "396",
+        "153",
+        "62",
+        "64",
+        "184",
+        "42",
+        "1426"
+      ],
+      "bm25_top10": [
+        "210",
+        "100",
+        "150",
+        "582",
+        "62",
+        "1040",
+        "396",
+        "1598",
+        "220",
+        "73"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 82,
+        "prompt_token_count": 497452,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497452
+          }
+        ],
+        "total_token_count": 497534
+      }
+    },
+    {
+      "query_id": "232",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "1296",
+        "1120",
+        "1210",
+        "425",
+        "1273",
+        "1328",
+        "937",
+        "285",
+        "686",
+        "1505"
+      ],
+      "vector_top10": [
+        "1296",
+        "1120",
+        "944",
+        "1730",
+        "293",
+        "177",
+        "838",
+        "727",
+        "686",
+        "1585"
+      ],
+      "bm25_top10": [
+        "1702",
+        "85",
+        "458",
+        "302",
+        "37",
+        "708",
+        "1290",
+        "1375",
+        "747",
+        "1296"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 90,
+        "prompt_token_count": 497461,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497461
+          }
+        ],
+        "total_token_count": 497551
+      }
+    },
+    {
+      "query_id": "270",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "382",
+        "373",
+        "295",
+        "106",
+        "203",
+        "130",
+        "147",
+        "312",
+        "578",
+        "570"
+      ],
+      "vector_top10": [
+        "382",
+        "295",
+        "147",
+        "203",
+        "106",
+        "130",
+        "312",
+        "373",
+        "434",
+        "578"
+      ],
+      "bm25_top10": [
+        "382",
+        "998",
+        "1292",
+        "312",
+        "130",
+        "295",
+        "334",
+        "578",
+        "203",
+        "147"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 84,
+        "prompt_token_count": 497446,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497446
+          }
+        ],
+        "total_token_count": 497530
+      }
+    },
+    {
+      "query_id": "272",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "210",
+        "63",
+        "978",
+        "3",
+        "1391",
+        "1691",
+        "1718",
+        "1104",
+        "257"
+      ],
+      "vector_top10": [
+        "1784",
+        "63",
+        "978",
+        "390",
+        "1718",
+        "1691",
+        "1730",
+        "210",
+        "253",
+        "1391"
+      ],
+      "bm25_top10": [
+        "563",
+        "567",
+        "440",
+        "843",
+        "996",
+        "32",
+        "73",
+        "1057",
+        "827",
+        "43"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 86,
+        "prompt_token_count": 497454,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497454
+          }
+        ],
+        "total_token_count": 497540
+      }
+    },
+    {
+      "query_id": "289",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "114",
+        "712",
+        "83",
+        "84",
+        "89",
+        "845",
+        "1063",
+        "60",
+        "231",
+        "155"
+      ],
+      "vector_top10": [
+        "114",
+        "845",
+        "712",
+        "60",
+        "314",
+        "233",
+        "1150",
+        "1023",
+        "13",
+        "83"
+      ],
+      "bm25_top10": [
+        "845",
+        "114",
+        "96",
+        "368",
+        "488",
+        "898",
+        "51",
+        "57",
+        "1590",
+        "698"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 81,
+        "prompt_token_count": 497464,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497464
+          }
+        ],
+        "total_token_count": 497545
+      }
+    },
+    {
+      "query_id": "299",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "177",
+        "838",
+        "1117",
+        "727",
+        "420",
+        "1185",
+        "1273",
+        "1210",
+        "511",
+        "1326"
+      ],
+      "vector_top10": [
+        "177",
+        "1117",
+        "420",
+        "1185",
+        "838",
+        "1594",
+        "1296",
+        "727",
+        "268",
+        "1210"
+      ],
+      "bm25_top10": [
+        "1141",
+        "727",
+        "268",
+        "1326",
+        "511",
+        "995",
+        "177",
+        "1612",
+        "1108",
+        "1578"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 89,
+        "prompt_token_count": 497454,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497454
+          }
+        ],
+        "total_token_count": 497543
+      }
+    },
+    {
+      "query_id": "313",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "1235",
+        "927",
+        "663",
+        "264",
+        "680",
+        "214",
+        "1321",
+        "283",
+        "377",
+        "227"
+      ],
+      "vector_top10": [
+        "927",
+        "1235",
+        "1683",
+        "1482",
+        "680",
+        "283",
+        "160",
+        "567",
+        "664",
+        "753"
+      ],
+      "bm25_top10": [
+        "1235",
+        "927",
+        "7",
+        "272",
+        "462",
+        "377",
+        "572",
+        "1158",
+        "440",
+        "1574"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 86,
+        "prompt_token_count": 497451,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497451
+          }
+        ],
+        "total_token_count": 497537
+      }
+    },
+    {
+      "query_id": "342",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "1131",
+        "119",
+        "386",
+        "656",
+        "756",
+        "883",
+        "19",
+        "89",
+        "635",
+        "403"
+      ],
+      "vector_top10": [
+        "1131",
+        "19",
+        "635",
+        "119",
+        "1041",
+        "883",
+        "386",
+        "396",
+        "656",
+        "137"
+      ],
+      "bm25_top10": [
+        "1757",
+        "519",
+        "119",
+        "656",
+        "1131",
+        "380",
+        "2",
+        "70",
+        "889",
+        "93"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 83,
+        "prompt_token_count": 497452,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497452
+          }
+        ],
+        "total_token_count": 497535
+      }
+    },
+    {
+      "query_id": "358",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "210",
+        "1391",
+        "978",
+        "253",
+        "1785",
+        "1691",
+        "1718",
+        "3",
+        "89"
+      ],
+      "vector_top10": [
+        "1784",
+        "978",
+        "1391",
+        "1718",
+        "1691",
+        "1785",
+        "390",
+        "63",
+        "253",
+        "944"
+      ],
+      "bm25_top10": [
+        "94",
+        "650",
+        "698",
+        "185",
+        "940",
+        "599",
+        "1187",
+        "902",
+        "1549",
+        "913"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 47,
+        "prompt_token_count": 497450,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497450
+          }
+        ],
+        "total_token_count": 497497
+      }
+    },
+    {
+      "query_id": "363",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "63",
+        "210",
+        "253",
+        "978",
+        "1785",
+        "1691",
+        "1718",
+        "3",
+        "1104"
+      ],
+      "vector_top10": [
+        "1784",
+        "63",
+        "978",
+        "210",
+        "1391",
+        "1718",
+        "100",
+        "1785",
+        "253",
+        "456"
+      ],
+      "bm25_top10": [
+        "456",
+        "692",
+        "576",
+        "582",
+        "1171",
+        "940",
+        "1123",
+        "1564",
+        "763",
+        "256"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 86,
+        "prompt_token_count": 497447,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497447
+          }
+        ],
+        "total_token_count": 497533
+      }
+    },
+    {
+      "query_id": "387",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "855",
+        "371",
+        "3",
+        "1391",
+        "210",
+        "978",
+        "100",
+        "104",
+        "63"
+      ],
+      "vector_top10": [
+        "1784",
+        "978",
+        "1718",
+        "63",
+        "253",
+        "1785",
+        "390",
+        "1391",
+        "1691",
+        "210"
+      ],
+      "bm25_top10": [
+        "2",
+        "515",
+        "32",
+        "514",
+        "567",
+        "73",
+        "74",
+        "854",
+        "38",
+        "8"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 83,
+        "prompt_token_count": 497452,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497452
+          }
+        ],
+        "total_token_count": 497535
+      }
+    },
+    {
+      "query_id": "399",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "177",
+        "838",
+        "727",
+        "1117",
+        "1326",
+        "1612",
+        "1531",
+        "1594",
+        "1185",
+        "1293"
+      ],
+      "vector_top10": [
+        "177",
+        "727",
+        "268",
+        "1326",
+        "1293",
+        "1117",
+        "1612",
+        "838",
+        "995",
+        "511"
+      ],
+      "bm25_top10": [
+        "177",
+        "1110",
+        "567",
+        "185",
+        "1037",
+        "843",
+        "822",
+        "2",
+        "827",
+        "996"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 91,
+        "prompt_token_count": 497454,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497454
+          }
+        ],
+        "total_token_count": 497545
+      }
+    },
+    {
+      "query_id": "427",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "1296",
+        "1339",
+        "1210",
+        "1273",
+        "1155",
+        "1784",
+        "944",
+        "511",
+        "185",
+        "293"
+      ],
+      "vector_top10": [
+        "1296",
+        "1730",
+        "978",
+        "304",
+        "432",
+        "1523",
+        "159",
+        "944",
+        "1117",
+        "63"
+      ],
+      "bm25_top10": [
+        "1296",
+        "334",
+        "1002",
+        "1455",
+        "1191",
+        "1131",
+        "982",
+        "868",
+        "889",
+        "819"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 90,
+        "prompt_token_count": 497443,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497443
+          }
+        ],
+        "total_token_count": 497533
+      }
+    },
+    {
+      "query_id": "429",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "15",
+        "137",
+        "122",
+        "10",
+        "89",
+        "64",
+        "182",
+        "435",
+        "42",
+        "706"
+      ],
+      "vector_top10": [
+        "15",
+        "122",
+        "10",
+        "35",
+        "182",
+        "137",
+        "64",
+        "124",
+        "12",
+        "6"
+      ],
+      "bm25_top10": [
+        "426",
+        "15",
+        "182",
+        "10",
+        "121",
+        "122",
+        "137",
+        "64",
+        "514",
+        "435"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 79,
+        "prompt_token_count": 497449,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497449
+          }
+        ],
+        "total_token_count": 497528
+      }
+    },
+    {
+      "query_id": "434",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "65",
+        "189",
+        "1366",
+        "1504",
+        "1636",
+        "1674",
+        "1702",
+        "566",
+        "267",
+        "88"
+      ],
+      "vector_top10": [
+        "566",
+        "1702",
+        "1504",
+        "1674",
+        "65",
+        "1366",
+        "1636",
+        "1178",
+        "650",
+        "230"
+      ],
+      "bm25_top10": [
+        "996",
+        "378",
+        "1287",
+        "1297",
+        "633",
+        "974",
+        "575",
+        "567",
+        "402",
+        "136"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 87,
+        "prompt_token_count": 497448,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497448
+          }
+        ],
+        "total_token_count": 497535
+      }
+    },
+    {
+      "query_id": "472",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1273",
+        "1784",
+        "1210",
+        "257",
+        "425",
+        "420",
+        "1785",
+        "253",
+        "1391",
+        "978"
+      ],
+      "vector_top10": [
+        "1785",
+        "420",
+        "425",
+        "1718",
+        "1784",
+        "978",
+        "63",
+        "1691",
+        "1273",
+        "293"
+      ],
+      "bm25_top10": [
+        "676",
+        "79",
+        "196",
+        "425",
+        "420",
+        "1331",
+        "52",
+        "121",
+        "1041",
+        "1370"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 50,
+        "prompt_token_count": 497466,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497466
+          }
+        ],
+        "total_token_count": 497516
+      }
+    },
+    {
+      "query_id": "488",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "981",
+        "561",
+        "321",
+        "795",
+        "345",
+        "793",
+        "980",
+        "346",
+        "416",
+        "218"
+      ],
+      "vector_top10": [
+        "981",
+        "561",
+        "795",
+        "719",
+        "980",
+        "321",
+        "793",
+        "1053",
+        "345",
+        "443"
+      ],
+      "bm25_top10": [
+        "22",
+        "218",
+        "422",
+        "327",
+        "561",
+        "338",
+        "346",
+        "596",
+        "442",
+        "321"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 84,
+        "prompt_token_count": 497450,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497450
+          }
+        ],
+        "total_token_count": 497534
+      }
+    },
+    {
+      "query_id": "544",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "425",
+        "1273",
+        "1210",
+        "420",
+        "1185",
+        "1296",
+        "532",
+        "1029",
+        "1230",
+        "1155"
+      ],
+      "vector_top10": [
+        "425",
+        "420",
+        "1273",
+        "1296",
+        "1210",
+        "293",
+        "1185",
+        "866",
+        "1608",
+        "532"
+      ],
+      "bm25_top10": [
+        "1287",
+        "425",
+        "420",
+        "996",
+        "378",
+        "633",
+        "21",
+        "1275",
+        "971",
+        "288"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 91,
+        "prompt_token_count": 497455,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497455
+          }
+        ],
+        "total_token_count": 497546
+      }
+    },
+    {
+      "query_id": "569",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "1691",
+        "1718",
+        "63",
+        "210",
+        "978",
+        "253",
+        "3",
+        "1391",
+        "855"
+      ],
+      "vector_top10": [
+        "1784",
+        "1718",
+        "63",
+        "1691",
+        "1391",
+        "978",
+        "257",
+        "210",
+        "1785",
+        "253"
+      ],
+      "bm25_top10": [
+        "1231",
+        "1084",
+        "567",
+        "843",
+        "440",
+        "73",
+        "32",
+        "563",
+        "996",
+        "1144"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 85,
+        "prompt_token_count": 497449,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497449
+          }
+        ],
+        "total_token_count": 497534
+      }
+    },
+    {
+      "query_id": "572",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "2",
+        "294",
+        "24",
+        "184",
+        "42",
+        "503",
+        "308",
+        "691",
+        "281",
+        "222"
+      ],
+      "vector_top10": [
+        "494",
+        "406",
+        "192",
+        "982",
+        "457",
+        "2",
+        "651",
+        "503",
+        "691",
+        "294"
+      ],
+      "bm25_top10": [
+        "2",
+        "138",
+        "651",
+        "196",
+        "976",
+        "1584",
+        "1215",
+        "8",
+        "1234",
+        "541"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 51,
+        "prompt_token_count": 497440,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497440
+          }
+        ],
+        "total_token_count": 497491
+      }
+    },
+    {
+      "query_id": "620",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "1691",
+        "1718",
+        "210",
+        "63",
+        "3",
+        "1391",
+        "978",
+        "253",
+        "1785"
+      ],
+      "vector_top10": [
+        "1784",
+        "1718",
+        "63",
+        "1391",
+        "390",
+        "1691",
+        "978",
+        "1039",
+        "979",
+        "169"
+      ],
+      "bm25_top10": [
+        "402",
+        "79",
+        "174",
+        "940",
+        "1100",
+        "931",
+        "578",
+        "110",
+        "627",
+        "1228"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 86,
+        "prompt_token_count": 497445,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497445
+          }
+        ],
+        "total_token_count": 497531
+      }
+    },
+    {
+      "query_id": "643",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "221",
+        "759",
+        "406",
+        "1392",
+        "1313",
+        "1393",
+        "1488",
+        "340",
+        "1470",
+        "212"
+      ],
+      "vector_top10": [
+        "1470",
+        "1393",
+        "406",
+        "759",
+        "221",
+        "154",
+        "111",
+        "1462",
+        "340",
+        "881"
+      ],
+      "bm25_top10": [
+        "996",
+        "1331",
+        "1041",
+        "52",
+        "121",
+        "196",
+        "827",
+        "971",
+        "431",
+        "503"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 89,
+        "prompt_token_count": 497453,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497453
+          }
+        ],
+        "total_token_count": 497542
+      }
+    },
+    {
+      "query_id": "652",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "89",
+        "495",
+        "42",
+        "150",
+        "213",
+        "389",
+        "762",
+        "176",
+        "715",
+        "587"
+      ],
+      "vector_top10": [
+        "176",
+        "1055",
+        "851",
+        "137",
+        "495",
+        "762",
+        "389",
+        "536",
+        "213",
+        "396"
+      ],
+      "bm25_top10": [
+        "588",
+        "787",
+        "616",
+        "92",
+        "192",
+        "526",
+        "97",
+        "153",
+        "598",
+        "13"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 82,
+        "prompt_token_count": 497455,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497455
+          }
+        ],
+        "total_token_count": 497537
+      }
+    },
+    {
+      "query_id": "653",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1784",
+        "210",
+        "1391",
+        "3",
+        "253",
+        "1785",
+        "978",
+        "1332",
+        "257",
+        "1691"
+      ],
+      "vector_top10": [
+        "1784",
+        "1391",
+        "978",
+        "63",
+        "1718",
+        "1691",
+        "390",
+        "253",
+        "1785",
+        "210"
+      ],
+      "bm25_top10": [
+        "1089",
+        "174",
+        "921",
+        "578",
+        "579",
+        "402",
+        "633",
+        "79",
+        "110",
+        "550"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 87,
+        "prompt_token_count": 497450,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497450
+          }
+        ],
+        "total_token_count": 497537
+      }
+    },
+    {
+      "query_id": "663",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 0
+      },
+      "gemini_top10": [
+        "1320",
+        "585",
+        "1217",
+        "1088",
+        "208",
+        "1591",
+        "156",
+        "457",
+        "278",
+        "1221"
+      ],
+      "vector_top10": [
+        "1320",
+        "585",
+        "1088",
+        "305",
+        "1530",
+        "1688",
+        "669",
+        "791",
+        "318",
+        "1705"
+      ],
+      "bm25_top10": [
+        "532",
+        "1608",
+        "492",
+        "1270",
+        "1041",
+        "1177",
+        "954",
+        "43",
+        "844",
+        "418"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 50,
+        "prompt_token_count": 497443,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497443
+          }
+        ],
+        "total_token_count": 497493
+      }
+    },
+    {
+      "query_id": "682",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "382",
+        "578",
+        "106",
+        "130",
+        "203",
+        "295",
+        "312",
+        "373",
+        "174",
+        "570"
+      ],
+      "vector_top10": [
+        "382",
+        "295",
+        "203",
+        "147",
+        "106",
+        "312",
+        "130",
+        "174",
+        "570",
+        "578"
+      ],
+      "bm25_top10": [
+        "382",
+        "570",
+        "972",
+        "130",
+        "295",
+        "578",
+        "312",
+        "203",
+        "147",
+        "106"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 84,
+        "prompt_token_count": 497445,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497445
+          }
+        ],
+        "total_token_count": 497529
+      }
+    },
+    {
+      "query_id": "689",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "8",
+        "2",
+        "138",
+        "184",
+        "121",
+        "204",
+        "651",
+        "196",
+        "192",
+        "42"
+      ],
+      "vector_top10": [
+        "192",
+        "982",
+        "457",
+        "406",
+        "651",
+        "494",
+        "1234",
+        "1331",
+        "199",
+        "138"
+      ],
+      "bm25_top10": [
+        "138",
+        "2",
+        "196",
+        "8",
+        "505",
+        "204",
+        "651",
+        "1311",
+        "719",
+        "153"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 79,
+        "prompt_token_count": 497441,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497441
+          }
+        ],
+        "total_token_count": 497520
+      }
+    },
+    {
+      "query_id": "704",
+      "gemini": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "vector": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "bm25": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit10": 1
+      },
+      "gemini_top10": [
+        "138",
+        "199",
+        "52",
+        "651",
+        "184",
+        "196",
+        "42",
+        "89",
+        "594",
+        "820"
+      ],
+      "vector_top10": [
+        "138",
+        "199",
+        "2",
+        "24",
+        "52",
+        "33",
+        "8",
+        "294",
+        "691",
+        "716"
+      ],
+      "bm25_top10": [
+        "138",
+        "2",
+        "196",
+        "651",
+        "8",
+        "514",
+        "204",
+        "1110",
+        "329",
+        "1135"
+      ],
+      "usage": {
+        "cache_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497436
+          }
+        ],
+        "cached_content_token_count": 497436,
+        "candidates_token_count": 42,
+        "prompt_token_count": 497450,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 497450
+          }
+        ],
+        "total_token_count": 497492
+      }
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "seed": 20260927,
+  "count": 30,
+  "query_embedding_timing": "excluded",
+  "preflight_max_jpy": 21.0946725,
+  "rows": [
+    {
+      "query_id": "8",
+      "vector_local_seconds": 0.0010181000106967986,
+      "gemini_api_seconds": 1.415026799950283,
+      "usage": {
+        "candidates_token_count": 51,
+        "prompt_token_count": 3079,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 3079
+          }
+        ],
+        "total_token_count": 3130
+      }
+    },
+    {
+      "query_id": "17",
+      "vector_local_seconds": 0.0005922000273130834,
+      "gemini_api_seconds": 1.3828781000338495,
+      "usage": {
+        "candidates_token_count": 46,
+        "prompt_token_count": 3162,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 3162
+          }
+        ],
+        "total_token_count": 3208
+      }
+    },
+    {
+      "query_id": "109",
+      "vector_local_seconds": 0.0005624999757856131,
+      "gemini_api_seconds": 1.2987508000223897,
+      "usage": {
+        "candidates_token_count": 43,
+        "prompt_token_count": 4598,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 4598
+          }
+        ],
+        "total_token_count": 4641
+      }
+    },
+    {
+      "query_id": "110",
+      "vector_local_seconds": 0.0006066000205464661,
+      "gemini_api_seconds": 1.5065368000068702,
+      "usage": {
+        "candidates_token_count": 43,
+        "prompt_token_count": 5254,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 5254
+          }
+        ],
+        "total_token_count": 5297
+      }
+    },
+    {
+      "query_id": "111",
+      "vector_local_seconds": 0.0007169999880716205,
+      "gemini_api_seconds": 1.451662400038913,
+      "usage": {
+        "candidates_token_count": 51,
+        "prompt_token_count": 1945,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 1945
+          }
+        ],
+        "total_token_count": 1996
+      }
+    },
+    {
+      "query_id": "118",
+      "vector_local_seconds": 0.0005844999686814845,
+      "gemini_api_seconds": 1.1280572999967262,
+      "usage": {
+        "candidates_token_count": 48,
+        "prompt_token_count": 2345,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2345
+          }
+        ],
+        "total_token_count": 2393
+      }
+    },
+    {
+      "query_id": "154",
+      "vector_local_seconds": 0.0007453999714925885,
+      "gemini_api_seconds": 1.2885320000350475,
+      "usage": {
+        "candidates_token_count": 48,
+        "prompt_token_count": 2320,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2320
+          }
+        ],
+        "total_token_count": 2368
+      }
+    },
+    {
+      "query_id": "163",
+      "vector_local_seconds": 0.0006467999774031341,
+      "gemini_api_seconds": 1.373453000036534,
+      "usage": {
+        "candidates_token_count": 49,
+        "prompt_token_count": 2491,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2491
+          }
+        ],
+        "total_token_count": 2540
+      }
+    },
+    {
+      "query_id": "172",
+      "vector_local_seconds": 0.0009733000188134611,
+      "gemini_api_seconds": 1.3058983000228181,
+      "usage": {
+        "candidates_token_count": 49,
+        "prompt_token_count": 2788,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2788
+          }
+        ],
+        "total_token_count": 2837
+      }
+    },
+    {
+      "query_id": "198",
+      "vector_local_seconds": 0.0009043999598361552,
+      "gemini_api_seconds": 1.3552728000213392,
+      "usage": {
+        "candidates_token_count": 52,
+        "prompt_token_count": 1973,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 1973
+          }
+        ],
+        "total_token_count": 2025
+      }
+    },
+    {
+      "query_id": "208",
+      "vector_local_seconds": 0.0005947000463493168,
+      "gemini_api_seconds": 1.2015209000092,
+      "usage": {
+        "candidates_token_count": 43,
+        "prompt_token_count": 3791,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 3791
+          }
+        ],
+        "total_token_count": 3834
+      }
+    },
+    {
+      "query_id": "272",
+      "vector_local_seconds": 0.0006187999970279634,
+      "gemini_api_seconds": 1.3194088999880478,
+      "usage": {
+        "candidates_token_count": 49,
+        "prompt_token_count": 2396,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2396
+          }
+        ],
+        "total_token_count": 2445
+      }
+    },
+    {
+      "query_id": "289",
+      "vector_local_seconds": 0.0008829999715089798,
+      "gemini_api_seconds": 1.1298700000043027,
+      "usage": {
+        "candidates_token_count": 44,
+        "prompt_token_count": 3490,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 3490
+          }
+        ],
+        "total_token_count": 3534
+      }
+    },
+    {
+      "query_id": "299",
+      "vector_local_seconds": 0.0005782000371254981,
+      "gemini_api_seconds": 1.1873307999921963,
+      "usage": {
+        "candidates_token_count": 50,
+        "prompt_token_count": 2663,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2663
+          }
+        ],
+        "total_token_count": 2713
+      }
+    },
+    {
+      "query_id": "342",
+      "vector_local_seconds": 0.0005650999955832958,
+      "gemini_api_seconds": 1.2344694000203162,
+      "usage": {
+        "candidates_token_count": 46,
+        "prompt_token_count": 3574,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 3574
+          }
+        ],
+        "total_token_count": 3620
+      }
+    },
+    {
+      "query_id": "358",
+      "vector_local_seconds": 0.0007899000192992389,
+      "gemini_api_seconds": 1.1127402000129223,
+      "usage": {
+        "candidates_token_count": 49,
+        "prompt_token_count": 2144,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2144
+          }
+        ],
+        "total_token_count": 2193
+      }
+    },
+    {
+      "query_id": "387",
+      "vector_local_seconds": 0.000512500002514571,
+      "gemini_api_seconds": 1.4211963000125252,
+      "usage": {
+        "candidates_token_count": 49,
+        "prompt_token_count": 2359,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2359
+          }
+        ],
+        "total_token_count": 2408
+      }
+    },
+    {
+      "query_id": "399",
+      "vector_local_seconds": 0.0005768000264652073,
+      "gemini_api_seconds": 1.1979291000170633,
+      "usage": {
+        "candidates_token_count": 49,
+        "prompt_token_count": 2601,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2601
+          }
+        ],
+        "total_token_count": 2650
+      }
+    },
+    {
+      "query_id": "427",
+      "vector_local_seconds": 0.001293000008445233,
+      "gemini_api_seconds": 1.1530362000339665,
+      "usage": {
+        "candidates_token_count": 48,
+        "prompt_token_count": 2747,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2747
+          }
+        ],
+        "total_token_count": 2795
+      }
+    },
+    {
+      "query_id": "429",
+      "vector_local_seconds": 0.0008774999878369272,
+      "gemini_api_seconds": 1.5579787000315264,
+      "usage": {
+        "candidates_token_count": 48,
+        "prompt_token_count": 6866,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 6866
+          }
+        ],
+        "total_token_count": 6914
+      }
+    },
+    {
+      "query_id": "472",
+      "vector_local_seconds": 0.000513400009367615,
+      "gemini_api_seconds": 1.3338249000371434,
+      "usage": {
+        "candidates_token_count": 49,
+        "prompt_token_count": 2030,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2030
+          }
+        ],
+        "total_token_count": 2079
+      }
+    },
+    {
+      "query_id": "488",
+      "vector_local_seconds": 0.000540599983651191,
+      "gemini_api_seconds": 1.2381725000450388,
+      "usage": {
+        "candidates_token_count": 46,
+        "prompt_token_count": 3193,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 3193
+          }
+        ],
+        "total_token_count": 3239
+      }
+    },
+    {
+      "query_id": "544",
+      "vector_local_seconds": 0.0011903999838978052,
+      "gemini_api_seconds": 1.2152673000236973,
+      "usage": {
+        "candidates_token_count": 50,
+        "prompt_token_count": 2285,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2285
+          }
+        ],
+        "total_token_count": 2335
+      }
+    },
+    {
+      "query_id": "572",
+      "vector_local_seconds": 0.000820400018710643,
+      "gemini_api_seconds": 1.3695289000170305,
+      "usage": {
+        "candidates_token_count": 43,
+        "prompt_token_count": 3401,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 3401
+          }
+        ],
+        "total_token_count": 3444
+      }
+    },
+    {
+      "query_id": "620",
+      "vector_local_seconds": 0.0005839999648742378,
+      "gemini_api_seconds": 1.1213631000136957,
+      "usage": {
+        "candidates_token_count": 49,
+        "prompt_token_count": 2202,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2202
+          }
+        ],
+        "total_token_count": 2251
+      }
+    },
+    {
+      "query_id": "643",
+      "vector_local_seconds": 0.0008957000100053847,
+      "gemini_api_seconds": 1.1901509999879636,
+      "usage": {
+        "candidates_token_count": 48,
+        "prompt_token_count": 2626,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2626
+          }
+        ],
+        "total_token_count": 2674
+      }
+    },
+    {
+      "query_id": "653",
+      "vector_local_seconds": 0.0010922999936155975,
+      "gemini_api_seconds": 1.2821773999603465,
+      "usage": {
+        "candidates_token_count": 49,
+        "prompt_token_count": 2358,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2358
+          }
+        ],
+        "total_token_count": 2407
+      }
+    },
+    {
+      "query_id": "663",
+      "vector_local_seconds": 0.0007486999966204166,
+      "gemini_api_seconds": 1.1618309000041336,
+      "usage": {
+        "candidates_token_count": 50,
+        "prompt_token_count": 2520,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 2520
+          }
+        ],
+        "total_token_count": 2570
+      }
+    },
+    {
+      "query_id": "682",
+      "vector_local_seconds": 0.0012964000343345106,
+      "gemini_api_seconds": 1.4886534999823198,
+      "usage": {
+        "candidates_token_count": 45,
+        "prompt_token_count": 5345,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 5345
+          }
+        ],
+        "total_token_count": 5390
+      }
+    },
+    {
+      "query_id": "704",
+      "vector_local_seconds": 0.0006070000235922635,
+      "gemini_api_seconds": 1.0371942999772727,
+      "usage": {
+        "candidates_token_count": 38,
+        "prompt_token_count": 5116,
+        "prompt_tokens_details": [
+          {
+            "modality": "TEXT",
+            "token_count": 5116
+          }
+        ],
+        "total_token_count": 5154
+      }
+    }
+  ],
+  "summary": {
+    "vector_local_median_seconds": 0.0006818999827373773,
+    "gemini_api_median_seconds": 1.285354699997697,
+    "gemini_api_p90_seconds": 1.451662400038913,
+    "gemini_api_min_seconds": 1.0371942999772727,
+    "gemini_api_max_seconds": 1.5579787000315264,
+    "gemini_api_p95_seconds": 1.4984893149958225
+  },
+  "usage_tokens": {
+    "prompt_token_count": 93662,
+    "candidates_token_count": 1422,
+    "thoughts_token_count": 0
+  },
+  "calculated_cost_usd": 0.075579,
+  "calculated_cost_jpy": 12.470534999999998
+}
