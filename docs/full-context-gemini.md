@@ -105,3 +105,11 @@ python scripts/top10_gemini_rerank.py --jpy-per-usd 165
 ```
 
 実行前に50問分の入力トークンを数え、全問が出力上限まで使った場合の費用が500円以下であることを確認する。結果は `results/top10-gemini-rerank-50-report.md`。
+
+同じ方法を正解ラベルのある全587問に広げた。
+
+```bash
+python scripts/top10_gemini_rerank_all.py --jpy-per-usd 165
+```
+
+587問分の事前上限見積もりは約407円、報告された使用量による計算額は約239円。Hit@1は497/587、Hit@3は546/587、Hit@10は553/587だった。詳細は `results/top10-gemini-rerank-587-report.md`。
