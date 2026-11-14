@@ -57,3 +57,15 @@ python scripts/verify_saved_results.py
 元データは Sakata らの *FAQ Retrieval using Query-Question Similarity and BERT-Based Query-Answer Relevance*（SIGIR 2019）に由来します。入力には[変換版の固定コミット](https://github.com/mahiya/japanese-text-embedding-benchmark/tree/c09fbe4ace0390b71d3d8a074ee1b807765d26f1/dataset)を使い、ダウンロードした3ファイルのハッシュを検証します。LocalgovFAQの明示的な再配布ライセンスは確認できませんでした。記事や再利用時には[元の配布元](https://github.com/ku-nlp/bert-based-faqir)と論文を参照してください。
 
 ルートの[MIT License](LICENSE)は、このリポジトリーで作成した**プログラムコード**に適用します。第三者のFAQ・問い合わせ本文、その利用条件、モデルや保存済み数値結果に一括でMITを付与するものではありません。旧[faq-search-experiment](https://github.com/takatama/faq-search-experiment)の子育てFAQデータとそのGit履歴は、この新しいリポジトリーには持ち込みません。
+
+## Gemini Decisions APIによる続編実験（2026-11-14）
+
+同じ候補10件・587問をDecision 1のchoiceで並べ直すと、Hit@1は486/587、Hit@3は540/587でした。前回のFlashの497/587・546/587から精度は下がる一方、587問の並べ直しの計算額は約$1.447から約$0.177へ下がりました。
+
+同日・固定30問の計測では、問い合わせの新規ベクトル化から並べ直しまでの中央値がFlash 2.81秒、Decision 0.77秒でした。Flashの587問の精度は前回の保存結果であり、同日再実行は30問の時間比較です。
+
+[評価レポート](results/decisions-choice-587-report.md)、[再現手順](docs/decisions-experiment.md)、[Qiita続編の原稿](docs/qiita-decisions-article.md)。公開結果はFAQ本文を含まず、次のコマンドでAPIなしで再検証できます。
+
+```bash
+python scripts/verify_decision_results.py
+```
