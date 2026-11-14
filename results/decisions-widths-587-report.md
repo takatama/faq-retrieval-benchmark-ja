@@ -70,4 +70,4 @@ scripts/verify_decision_width_results.pyがAPIなしで、ベクトルからの�
 
 正解判定は元研究のgrade 2ラベルに従い、解決率・回答なしの拒否性能は評価していない。候補包含率の改善と、1位・3位・10位までへ上げる能力を区別する。Flashへのフォールバックは本記事の範囲に含めない。
 
-[実行手順](../docs/decisions-width-experiment.md)、[統合したQiita原稿](../docs/qiita-decisions-article.md)、[公式料金](https://aistudio.google.com/docs/pricing)、[API仕様](https://aistudio.google.com/docs/decisions-api)。
+[実行手順](../docs/decisions-width-experiment.md)、[公開したQiita記事](https://qiita.com/takatama/items/648b3abe6ce5ab86bf5f)、[公式料金](https://aistudio.google.com/docs/pricing)、[API仕様](https://aistudio.google.com/docs/decisions-api)。

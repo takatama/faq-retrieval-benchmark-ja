@@ -12,3 +12,4 @@ reranker-progress.json
 reranker-results.json
 
 demo/faq-search/dist/
+demo/faq-search/.openai/

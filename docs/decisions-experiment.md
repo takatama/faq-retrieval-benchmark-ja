@@ -1,7 +1,7 @@
 # Decisions API実験の再現
 
 既存のFAQ検索の候補と正解ラベルを変えず、並べ直しの部分を比較する。
-結果は[評価レポート](../results/decisions-choice-587-report.md)、記事原稿は[Qiita続編](qiita-decisions-article.md)。
+結果は[評価レポート](../results/decisions-choice-587-report.md)、実験の流れは[公開したQiita続編](https://qiita.com/takatama/items/648b3abe6ce5ab86bf5f)を参照。
 
 ## 準備
 
@@ -14,9 +14,7 @@ python -m pip install --target work/decisions-sdk 'google-genai==3.3.0'
 # 既存の.venvにnumpyがなければ、別環境にnumpyもインストールする。
 ```
 
-今回の.venvにはpipがなかったため、公式bootstrap.pypa.io配布のpip.pyzをwork/へ取得し、.venv/bin/python work/pip.pyz install --target work/decisions-sdk google-genai==3.3.0で導入した。既存SDK（2.25.0）は変更していない。
-
-GEMINI_API_KEYを実行プロセスの環境変数に設定する。キーをチャット・コマンド履歴・リポジトリーに貼らない。今回のWindows環境変数はパイプ経由でWSLのreadへ渡した。値は保存・表示していない。
+GEMINI_API_KEYを実行プロセスの環境変数に設定する。キーをチャット・コマンド履歴・リポジトリーに貼らない。
 
 ## 疎通確認と587問評価
 
@@ -53,7 +51,7 @@ OPENBLAS_NUM_THREADS=1 PYTHONPATH=work/decisions-sdk \
 .venv/bin/python scripts/verify_saved_results.py
 ```
 
-公開するのはID・順位・確率・秒数・使用量・設定・集計。今回の結果はresults/decisions-choice-587-results.json.gzとresults/decisions-paired-latency-30-results.jsonに保存した。詳細な実行記録はGit管理外work/に残す。既存の記事原稿と前回結果は変更しない。
+公開するのはID・順位・確率・秒数・使用量・設定・集計。今回の結果はresults/decisions-choice-587-results.json.gzとresults/decisions-paired-latency-30-results.jsonに保存した。詳細な実行記録はGit管理外work/に残す。
 
 新しい実行の公開用ファイルは、以下で作成できる:
 
@@ -76,4 +74,4 @@ APIの同じモデルIDでも内部の更新や非決定性により再実行の
 
 ## 候補数を増やす追加実験
 
-上記は最初の候補10件の実験手順です。候補10・30・100件の比較は[追加実験の手順](decisions-width-experiment.md)を参照してください。元の10件の保存結果と時間計測は維持し、記事は同じ原稿へ統合します。
+上記は最初の候補10件の実験手順です。候補10・30・100件の比較は[追加実験の手順](decisions-width-experiment.md)を参照してください。

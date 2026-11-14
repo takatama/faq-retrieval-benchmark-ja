@@ -55,6 +55,6 @@ Decisions API 90回とEmbedding API 90回の新規呼び出し。時間計測の
 OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/verify_decision_width_results.py
 ```
 
-公開先はresults/decisions-widths-587-results.json.gzとresults/decisions-width-latency-30-results.json。元の10件実験の成果物は維持する。記事は同じdocs/qiita-decisions-article.mdを更新し、全体の結論も最終結果に合わせて書き直す。
+公開先はresults/decisions-widths-587-results.json.gzとresults/decisions-width-latency-30-results.json。元の10件実験の成果物は維持する。実験の流れと結果は[Qiita続編](https://qiita.com/takatama/items/648b3abe6ce5ab86bf5f)で公開している。
 
 同じ587問で追加実験を行うため、初回結果を見た後の探索的な拡張である。観測された最良条件を、独立データで検証済みの最適値とは扱わない。同じモデルIDでもAPI内部のモデル更新や非決定性がある。速度は単一環境・固定30問各条件1回の計測であり、同時アクセス性能の保証ではない。

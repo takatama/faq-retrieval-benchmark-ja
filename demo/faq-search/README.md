@@ -2,6 +2,8 @@
 
 架空の社内FAQ18件と質問例6件を使った、前回・今回の記事共通の検索アプリの説明用デモです。質問例を選び、候補3件を表示し、開いて既存のFAQ回答を読めます。
 
+[CodePenで公開デモを開く](https://codepen.io/takatama/pen/qErveNr)
+
 「検索方法を比べる」で、検索のみ・検索＋Flash・検索＋Decisionを切り替えられます。通常の利用画面からモデルの設定を分離しています。
 
 ![FAQ検索ラボの画面](preview.jpg)
@@ -29,9 +31,7 @@ python -m http.server 8765 --directory demo/faq-search/dist
 
 デモの「このデモについて」→「CodePenで開く」を使うと、[公式Prefill API](https://blog.codepen.io/documentation/prefill/)へHTML・CSS・データ込みのJavaScriptをPOSTし、新しいPenの編集画面を開きます。外部アセットやAPIキーは含めません。
 
-転送後の実行画面まで確認済みです。保存・公開にはCodePenへのログインが必要で、この時点ではPenの公開URLはまだ作っていません。転送されるコードはdist/codepen.jsonでも確認できます。手動の場合は、そのhtml・css・jsを各エディターへ貼り付けます。
-
-Sitesの[本人向けプレビュー](https://faq-search-lab-ja-1114.takatama.chatgpt.site)にも配信しています。ChatGPTでのログインが必要です。記事の読者向けの埋め込み先には、保存・公開後のCodePen URLを使ってください。
+保存・公開にはCodePenへのログインが必要です。転送されるコードはdist/codepen.jsonでも確認できます。手動の場合は、そのhtml・css・jsを各エディターへ貼り付けます。
 
 ## 検証
 
@@ -54,6 +54,7 @@ python scripts/build_faq_demo.py
 
 GEMINI_API_KEYとgoogle-genai 3.3.0、numpyが必要です。キーをソースやCodePenに入れないでください。再収録のAPI呼び出しには通常の利用料金がかかります。完了したサンプルはwork/faq-demo-recordings/の進捗から再利用し、入力データのfingerprintが変わると再開しません。
 
-## 記事での紹介
+## 関連記事
 
-[両記事向けの紹介文](../../docs/faq-demo-introduction.md)を用意しています。原稿では、画面の使い方と記録再生であることを冒頭で説明し、ベンチマークの測定値と分けます。
+- [FAQ全件読みと候補の並べ直し](https://qiita.com/takatama/items/cdda4e02f02653b8ce0c)
+- [Gemini Decisions APIによるFAQ検索の続編](https://qiita.com/takatama/items/648b3abe6ce5ab86bf5f)
