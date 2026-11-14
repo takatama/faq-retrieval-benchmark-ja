@@ -80,3 +80,9 @@ python scripts/verify_saved_results.py
 python scripts/verify_decision_results.py
 OPENBLAS_NUM_THREADS=1 python scripts/verify_decision_width_results.py
 ```
+
+## 記事共通のFAQ検索デモ
+
+[FAQ検索ラボ](demo/faq-search/README.md)で、質問例を選び、候補のFAQを開いて回答を読む体験を確認できます。検索のみ・Flash・Decisionの記録済みAPI結果を再生し、CodePenへの転送にも対応しています。
+
+デモのFAQ18件と質問例6件は新規作成した架空の内容です。研究データの本文やAPIキーは含めず、記事の1,786件・587問の評価とは分けています。[両記事で使える紹介文](docs/faq-demo-introduction.md)も用意しています。
