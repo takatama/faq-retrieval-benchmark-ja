@@ -1,8 +1,11 @@
 # 日本語FAQ検索の比較実験
 
-実験の流れと結果をまとめた[Qiita記事の原稿](docs/qiita-article.md)も収録しています。
+実験の流れと結果はQiitaで公開しています。
 
-社内FAQが将来約1,500件に増えたとき、質問文のベクトル検索だけで候補を探せるかを考えるため、独立した問い合わせがある[LocalgovFAQ研究](https://github.com/ku-nlp/bert-based-faqir)由来の公開データで比較しました。社内FAQがすでに1,500件ある、または実際の社内問い合わせで精度を測った、という意味ではありません。
+- [FAQ 1,786件を全部Geminiに渡してみた。そこから考えるFAQ検索の育て方](https://qiita.com/takatama/items/cdda4e02f02653b8ce0c)
+- [Gemini Decisions APIによるFAQ検索の続編](https://qiita.com/takatama/items/648b3abe6ce5ab86bf5f)
+
+自然な言葉で質問して既存のFAQを探すアプリを想定し、独立した問い合わせがある[LocalgovFAQ研究](https://github.com/ku-nlp/bert-based-faqir)由来の公開データで検索方法を比較しました。実際の社内問い合わせによる評価ではありません。
 
 FAQ 1,786件、問い合わせ749問のうち、公開ラベルに「回答を含むFAQ」がある587問を対象とします。上位にラベル付きFAQが入る数は次のとおりです。
 
@@ -14,7 +17,7 @@ FAQ 1,786件、問い合わせ749問のうち、公開ラベルに「回答を�
 | FAQごとに生成した5件の言い換えを個別に索引化 | 379 | 506 | 558 |
 | ベクトル上位10件をリランカーで並べ直す | 353 | 474 | 553 |
 
-分母は各列とも587です。この条件では、質問文を1件1本だけベクトル化して上位3件を見せる方法を初期構成に選びます。合成クエリの個別索引はHit@3で10問増えますが、Hit@1は15問減り、ベクトル数は6倍です。固定RRFとこのリランカーはHit@3を下げました。別の重み、モデル、候補の作り方を一般に否定する結果ではありません。
+分母は各列とも587です。合成クエリの個別索引はHit@3で10問増えますが、Hit@1は15問減り、ベクトル数は6倍です。固定RRFとこのリランカーはHit@3を下げました。別の重み、モデル、候補の作り方を一般に否定する結果ではありません。
 
 これは**元研究の正解ラベルを含む割合**であり、利用者が回答を読んで解決する割合ではありません。未判定の有用なFAQが検索結果に混じる可能性があります。特定の自治体のデータを社内FAQ全般へ直接一般化もしません。
 
@@ -37,7 +40,7 @@ FAQ 1,786件、問い合わせ749問のうち、公開ラベルに「回答を�
 
 さらに同じ20問で両方式のAPI呼び出しを1回ずつ測ると、全件読みは中央値2.28秒・p95 5.48秒、Top 10だけの並べ直しは中央値1.25秒・p95 2.09秒でした。全件読みでは20回すべてでキャッシュ使用を確認しました。[対応ありの時間計測](results/full-vs-top10-latency-20-report.md)に費用と計測範囲を記録しています。
 
-質問文ベクトル検索も、先にTop 10並べ直しを計時したものと同じ30問で新しい質問ベクトルのAPI生成から測りました。Top 10取得までの中央値は0.50秒、p95は0.55秒。Gemini並べ直しの呼び出し中央値1.29秒を加えると、待ち時間が増える代わりに検索順位が改善する関係が分かります。[ベクトル検索の時間計測](results/vector-end-to-end-latency-30-report.md)に範囲と個別記録を記載しています。
+質問文ベクトル検索も、先にTop 10並べ直しを計時したものと同じ30問で新しい質問ベクトルのAPI生成から測りました。Top 10取得までの中央値は0.50秒、p95は0.55秒です。並べ直しとは別々の計測であり、それぞれの中央値の和は検索処理全体の中央値ではありません。[ベクトル検索の時間計測](results/vector-end-to-end-latency-30-report.md)に範囲と個別記録を記載しています。
 
 ## 再現
 
@@ -57,3 +60,32 @@ python scripts/verify_saved_results.py
 元データは Sakata らの *FAQ Retrieval using Query-Question Similarity and BERT-Based Query-Answer Relevance*（SIGIR 2019）に由来します。入力には[変換版の固定コミット](https://github.com/mahiya/japanese-text-embedding-benchmark/tree/c09fbe4ace0390b71d3d8a074ee1b807765d26f1/dataset)を使い、ダウンロードした3ファイルのハッシュを検証します。LocalgovFAQの明示的な再配布ライセンスは確認できませんでした。記事や再利用時には[元の配布元](https://github.com/ku-nlp/bert-based-faqir)と論文を参照してください。
 
 ルートの[MIT License](LICENSE)は、このリポジトリーで作成した**プログラムコード**に適用します。第三者のFAQ・問い合わせ本文、その利用条件、モデルや保存済み数値結果に一括でMITを付与するものではありません。旧[faq-search-experiment](https://github.com/takatama/faq-search-experiment)の子育てFAQデータとそのGit履歴は、この新しいリポジトリーには持ち込みません。
+
+## Gemini Decisions APIによる続編実験（2026-11-14）
+
+同じ587問で候補10・30・100件を比較しました。10件条件の精度は先行実験を再利用し、30/100件を各587問ずつ追加実行しています。
+
+| Decisionへ渡す候補数 | Hit@1 | Hit@3 | Hit@10 | 並べ直し計算額 |
+|---|---:|---:|---:|---:|
+| 10件 | 486 | 540 | 553 | $0.177 |
+| 30件 | 482 | 551 | 571 | $0.511 |
+| 100件 | 480 | 560 | 577 | $1.670 |
+
+候補を増やすと上位3件・10件の正解数は増えましたが、1位の正解数は減りました。候補に正解がある問い合わせ数は553→574→583です。前回のFlash 10件はHit@1が497、Hit@3が546、計算額は$1.447でした。100件条件は前回のFlashより高くなります。費用は公開有料単価による計算で、ベクトル化・無料枠・請求書実額は含みません。
+
+別途、固定30問で各候補数を新しく計測し、問い合わせのベクトル化から並べ直しまでの中央値は10件0.68秒、30件0.75秒、100件0.92秒でした。元のFlash対Decisionの時間計測も維持し、異なる計測枠の値を混ぜていません。
+
+[公開したQiita続編](https://qiita.com/takatama/items/648b3abe6ce5ab86bf5f)、[候補数比較レポート](results/decisions-widths-587-report.md)、[追加実験の手順](docs/decisions-width-experiment.md)。[最初の10件のレポート](results/decisions-choice-587-report.md)と[共通手順](docs/decisions-experiment.md)も参照してください。
+
+公開結果はFAQ本文を含まず、次のコマンドでAPIなしで再検証できます。
+
+```bash
+python scripts/verify_decision_results.py
+OPENBLAS_NUM_THREADS=1 python scripts/verify_decision_width_results.py
+```
+
+## 記事共通のFAQ検索デモ
+
+[CodePenのFAQ検索ラボ](https://codepen.io/takatama/pen/qErveNr)で、質問例を選び、候補のFAQを開いて回答を読む体験を確認できます。検索のみ・Flash・Decisionの記録済みAPI結果を再生します。[ソースと実行手順](demo/faq-search/README.md)も収録しています。
+
+デモのFAQ18件と質問例6件は新規作成した架空の内容です。研究データの本文やAPIキーは含めず、記事の1,786件・587問の評価とは分けています。

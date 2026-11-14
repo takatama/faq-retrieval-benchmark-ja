@@ -10,3 +10,6 @@ independent-vectors.json.gz
 independent-vector-results.json
 reranker-progress.json
 reranker-results.json
+
+demo/faq-search/dist/
+demo/faq-search/.openai/

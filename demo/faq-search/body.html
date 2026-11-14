@@ -1,0 +1,46 @@
+<main class="app-shell" lang="ja">
+  <header class="topbar">
+    <a class="brand" href="#page-title" aria-label="FAQ検索ラボ ホーム"><span class="brand-icon" aria-hidden="true">?</span>FAQ検索ラボ</a>
+    <div class="topbar-right"><span class="replay-tag"><span aria-hidden="true"></span>記録済み結果の再生</span><button class="text-button" id="about-button" type="button">このデモについて</button></div>
+  </header>
+  <div class="workspace">
+    <section class="search-pane" aria-labelledby="page-title">
+      <span class="section-kicker">架空の会社の、18件のFAQ</span>
+      <h1 id="page-title">どのFAQを<br>読めばいい？</h1>
+      <form id="search-form" class="search-box">
+        <label for="query">聞きたいこと</label>
+        <textarea id="query" readonly rows="3" aria-describedby="query-help"></textarea>
+        <div class="search-box-footer"><span id="query-help">下の質問例から選べます</span><button class="search-button" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 4.5 4.5"></path></svg>FAQを探す</button></div>
+      </form>
+      <div id="sample-list" class="sample-list" aria-label="質問例"></div>
+      <details id="comparison" class="comparison">
+        <summary>検索方法を比べる<span aria-hidden="true">＋</span></summary>
+        <fieldset class="method-picker"><legend>同じ質問で、方法を切り替える</legend>
+          <label><input type="radio" name="method" value="vector"><span>検索のみ</span></label>
+          <label><input type="radio" name="method" value="flash"><span>＋ Flash</span></label>
+          <label><input type="radio" name="method" value="decision" checked><span>＋ Decision</span></label>
+        </fieldset>
+        <div class="timing-table-wrap"><table class="timing-table"><caption>この質問の収録時の待ち時間</caption><thead><tr><th scope="col">処理</th><th scope="col">検索のみ</th><th scope="col">Flash</th><th scope="col">Decision</th></tr></thead><tbody id="timing-body"></tbody></table></div>
+        <p class="comparison-note">同じ候補10件を使います。モデルの回答文の生成ではなく、読むFAQの順位付けを比べています。</p>
+      </details>
+    </section>
+    <section class="results-pane" aria-labelledby="results-title">
+      <div class="results-heading"><h2 id="results-title">読むFAQの候補</h2><span id="result-meta"></span></div>
+      <ol class="stage-track" aria-label="検索の処理">
+        <li data-stage="embed"><span class="stage-dot" aria-hidden="true"></span><span>質問を変換</span></li><li data-stage="retrieve"><span class="stage-dot" aria-hidden="true"></span><span>FAQを探す</span></li><li data-stage="rerank"><span class="stage-dot" aria-hidden="true"></span><span>AIで確認</span></li>
+      </ol>
+      <p class="sr-only" id="search-status" role="status" aria-live="polite"></p>
+      <div id="results" class="results-list" aria-busy="false"></div>
+      <p class="results-footnote" id="results-footnote">表示する回答は、用意してあるFAQの本文です。</p>
+    </section>
+  </div>
+  <footer class="page-footer"><a href="https://qiita.com/takatama/items/cdda4e02f02653b8ce0c" target="_blank" rel="noopener noreferrer">実験の記事を読む <span aria-hidden="true">↗</span></a></footer>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <div class="dialog-heading"><h2 id="about-title">このデモについて</h2><button id="close-about" class="close-button" aria-label="閉じる" type="button">×</button></div>
+    <p>18件の架空の社内FAQと6つの質問例を使った、検索アプリの体験デモです。質問例を選び、候補からFAQを開いて回答を読めます。</p>
+    <p>検索順位と待ち時間は、Gemini APIを実際に呼び出して収録した結果を再生しています。この画面からAPIは呼び出しません。自由入力には対応していません。</p>
+    <p>記事の1,786件・587問とは別のデータです。この小さなデモから精度や速度の優劣を判断するものではありません。FAQの内容も実在の会社のルールではありません。</p>
+    <dl class="record-info"><div><dt>収録</dt><dd id="recorded-at"></dd></div><div><dt>検索</dt><dd>gemini-embedding-2 / 768次元</dd></div><div><dt>順位付け</dt><dd>gemini-3.8-flash / gemini-decision-1</dd></div></dl>
+    <div class="dialog-actions"><button id="codepen-button" class="outline-button" type="button">CodePenで開く <span aria-hidden="true">↗</span></button><a href="https://github.com/takatama/faq-retrieval-benchmark-ja/tree/codex/gemini-decisions-benchmark/demo/faq-search" target="_blank" rel="noopener noreferrer">ソースを見る ↗</a></div><p id="codepen-status" class="small-note" role="status"></p>
+  </dialog>
+</main>
