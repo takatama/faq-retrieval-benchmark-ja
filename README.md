@@ -60,12 +60,23 @@ python scripts/verify_saved_results.py
 
 ## Gemini Decisions APIによる続編実験（2026-11-14）
 
-同じ候補10件・587問をDecision 1のchoiceで並べ直すと、Hit@1は486/587、Hit@3は540/587でした。前回のFlashの497/587・546/587から精度は下がる一方、587問の並べ直しの計算額は約$1.447から約$0.177へ下がりました。
+同じ587問で候補10・30・100件を比較しました。10件条件の精度は先行実験を再利用し、30/100件を各587問ずつ追加実行しています。
 
-同日・固定30問の計測では、問い合わせの新規ベクトル化から並べ直しまでの中央値がFlash 2.81秒、Decision 0.77秒でした。Flashの587問の精度は前回の保存結果であり、同日再実行は30問の時間比較です。
+| Decisionへ渡す候補数 | Hit@1 | Hit@3 | Hit@10 | 並べ直し計算額 |
+|---|---:|---:|---:|---:|
+| 10件 | 486 | 540 | 553 | $0.177 |
+| 30件 | 482 | 551 | 571 | $0.511 |
+| 100件 | 480 | 560 | 577 | $1.670 |
 
-[評価レポート](results/decisions-choice-587-report.md)、[再現手順](docs/decisions-experiment.md)、[Qiita続編の原稿](docs/qiita-decisions-article.md)。公開結果はFAQ本文を含まず、次のコマンドでAPIなしで再検証できます。
+候補を増やすと上位3件・10件の正解数は増えましたが、1位の正解数は減りました。候補に正解がある問い合わせ数は553→574→583です。前回のFlash 10件はHit@1が497、Hit@3が546、計算額は$1.447でした。100件条件は前回のFlashより高くなります。費用は公開有料単価による計算で、ベクトル化・無料枠・請求書実額は含みません。
+
+別途、固定30問で各候補数を新しく計測し、問い合わせのベクトル化から並べ直しまでの中央値は10件0.68秒、30件0.75秒、100件0.92秒でした。元のFlash対Decisionの時間計測も維持し、異なる計測枠の値を混ぜていません。
+
+[統合したQiita続編原稿](docs/qiita-decisions-article.md)、[候補数比較レポート](results/decisions-widths-587-report.md)、[追加実験の手順](docs/decisions-width-experiment.md)。[最初の10件のレポート](results/decisions-choice-587-report.md)と[共通手順](docs/decisions-experiment.md)も残しています。
+
+公開結果はFAQ本文を含まず、次のコマンドでAPIなしで再検証できます。
 
 ```bash
 python scripts/verify_decision_results.py
+OPENBLAS_NUM_THREADS=1 python scripts/verify_decision_width_results.py
 ```
