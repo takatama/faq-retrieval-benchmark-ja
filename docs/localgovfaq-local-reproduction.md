@@ -8,6 +8,8 @@
 
 ルートの `LICENSE` は本リポジトリーの**コード**に対するMITライセンスです。上記データの権利を変更しません。子育てFAQデータはこのリポジトリーに含まれていません。
 
+2026-11-15の個別指示により、[Carbon評価用の17質問・152組](../reviews/carbon-20261115/README.md)だけは本文付きの抜粋を収録しました。上記の本文非収録ルールに対する、この評価セットに限った例外です。第三者本文へMITを付与するものではありません。
+
 ## 準備と基準値の再現
 
 リポジトリーのルートで、Python 3.12以降を使用します。`work/` は `.gitignore` に含まれます。Windowsの場合は `python3` を `python`、`cp` を `Copy-Item` 等に読み替えてください。
@@ -65,4 +67,4 @@ python scripts/reranker_experiment.py --dataset-dir work/localgovfaq/dataset
 
 ## 公開物の範囲
 
-このリポジトリーで配布するLocalgovFAQ関連の結果は、集計、ID順位、数値ベクトル、再現用コードです。`python scripts/verify_saved_results.py` で元データのqrelsに対し保存順位を再採点できます。FAQや問い合わせの全文、合成質問文の一括ファイルは現在のmainに含めません。MITを元データに適用したという意味ではありません。以前の公開コミットやActionsの成果物には過去のファイルが残る可能性があります。
+このリポジトリーで配布するLocalgovFAQ関連の結果は、集計、ID順位、数値ベクトル、再現用コードです。`python scripts/verify_saved_results.py` で元データのqrelsに対し保存順位を再採点できます。上記のCarbon評価セットを除き、FAQや問い合わせの全文、合成質問文の一括ファイルは収録しません。MITを元データに適用したという意味ではありません。以前の公開コミットやActionsの成果物には過去のファイルが残る可能性があります。

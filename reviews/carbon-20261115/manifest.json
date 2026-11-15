@@ -1,0 +1,18 @@
+{
+  "review_id": "faq-remaining-pairs-20261115-v1",
+  "fingerprint": "55303b098678249dbad18bd63338373177d976c6d256105dce33a01780e0fafc",
+  "question_count": 17,
+  "pair_count": 152,
+  "input_contains_reference_labels": false,
+  "input_contains_model_predictions": false,
+  "source_commit": "c09fbe4ace0390b71d3d8a074ee1b807765d26f1",
+  "source_corpus_git_blob_sha1": "d6061eb7ef0a1175d4065e745af17e4c2cd7e76a",
+  "source_queries_git_blob_sha1": "96094ff12fd7a97226bfd1c5d936d71e422a51e1",
+  "files_sha256": {
+    "data.json": "e24899b7857199c222044f07ccd2cce26dac393791192a6cabe1ab91a23a853d",
+    "prompt.md": "5278b8e46b15ddbdc4d511e9b4762ab4b08845189edc848e86f9a1cea3015213",
+    "request.md": "cd6258a003d931cd5ac682351abb7e153ac3aee4cbf27dd1f13803aeb00b028d",
+    "validate_response.py": "a21af40038b0e04867d6fe3fe447aee1e71da56d1c4b5a69d09586e8113de1c5"
+  },
+  "evaluator_output_kind": "model_assisted_annotations_not_independent_human_gold"
+}

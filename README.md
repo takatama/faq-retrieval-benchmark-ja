@@ -44,7 +44,7 @@ FAQ 1,786件、問い合わせ749問のうち、公開ラベルに「回答を�
 
 ## 再現
 
-[ローカル実行手順](docs/localgovfaq-local-reproduction.md)に従って元データを手元に取得し、Git blob SHAを照合します。データ本文や合成質問文の一括ファイルはこのリポジトリーに含めません。実験用のGitHub Actionsは使用しません。
+[ローカル実行手順](docs/localgovfaq-local-reproduction.md)に従って元データを手元に取得し、Git blob SHAを照合します。原則としてデータ本文や合成質問文の一括ファイルは収録しません。例外として、ユーザー指定の[Carbon評価用17質問・152組](reviews/carbon-20261115/README.md)には、必要な質問・FAQ本文の抜粋を出典・取り扱いの注記とともに収録しています。実験用のGitHub Actionsは使用しません。
 
 Python 3.12以降でデータを取得した後、**API呼び出しなし**で保存済みID順位を公開qrelsと照合できます。
 
@@ -60,6 +60,10 @@ python scripts/verify_saved_results.py
 元データは Sakata らの *FAQ Retrieval using Query-Question Similarity and BERT-Based Query-Answer Relevance*（SIGIR 2019）に由来します。入力には[変換版の固定コミット](https://github.com/mahiya/japanese-text-embedding-benchmark/tree/c09fbe4ace0390b71d3d8a074ee1b807765d26f1/dataset)を使い、ダウンロードした3ファイルのハッシュを検証します。LocalgovFAQの明示的な再配布ライセンスは確認できませんでした。記事や再利用時には[元の配布元](https://github.com/ku-nlp/bert-based-faqir)と論文を参照してください。
 
 ルートの[MIT License](LICENSE)は、このリポジトリーで作成した**プログラムコード**に適用します。第三者のFAQ・問い合わせ本文、その利用条件、モデルや保存済み数値結果に一括でMITを付与するものではありません。旧[faq-search-experiment](https://github.com/takatama/faq-search-experiment)の子育てFAQデータとそのGit履歴は、この新しいリポジトリーには持ち込みません。
+
+## Carbonへ渡す補助ラベルの評価セット
+
+[指示と全入力をまとめたファイル](reviews/carbon-20261115/request.md)をGemini 4 Carbonへ渡せます。17質問・152組を匿名IDで評価し、JSONで返す指示です。既存のラベル・確率・モデル判定は入力に含めず、返却結果は人手の正解とは別の補助ラベルとして保持します。[ファイル一覧・出典・返却JSONの検査方法](reviews/carbon-20261115/README.md)。
 
 ## Gemini Decisions APIによる続編実験（2026-11-14）
 
